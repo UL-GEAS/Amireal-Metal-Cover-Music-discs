@@ -11,9 +11,9 @@ import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
-@Mod(value = AmirealMetalCoverMusicdisks.MODID, dist = Dist.CLIENT)
+@Mod(value = GeasMetalDIsks.MOD_ID, dist = Dist.CLIENT)
 // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-@EventBusSubscriber(modid = AmirealMetalCoverMusicdisks.MODID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = GeasMetalDIsks.MOD_ID, value = Dist.CLIENT)
 public class AmirealMetalCoverMusicdisksClient {
     public AmirealMetalCoverMusicdisksClient(ModContainer container) {
         // Allows NeoForge to create a config screen for this mod's configs.
@@ -25,7 +25,7 @@ public class AmirealMetalCoverMusicdisksClient {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         // Some client setup code
-        AmirealMetalCoverMusicdisks.LOGGER.info("HELLO FROM CLIENT SETUP");
-        AmirealMetalCoverMusicdisks.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        GeasMetalDIsks.LOGGER.info("HELLO FROM CLIENT SETUP");
+        GeasMetalDIsks.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
     }
 }

@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.geas_metal_discs.creator_metal_disc.desc"
+  },
+  "length_in_seconds": 177.0,
+  "sound_event": "geas_metal_discs:creator_metal"
+}

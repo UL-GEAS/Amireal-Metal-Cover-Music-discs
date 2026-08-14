@@ -1,13 +1,4 @@
 {
-  "itemGroup.geas_metal_discs": "Example Mod Tab",
-  "block.geas_metal_discs.example_block": "Example Block",
-  "item.geas_metal_discs.example_item": "Example Item",
-
-  "geas_metal_discs.configuration.title": "Amireal Metal Cover Music disks Configs",
-  "geas_metal_discs.configuration.section.geas_metal_discs.common.toml": "Amireal Metal Cover Music disks Configs",
-  "geas_metal_discs.configuration.section.geas_metal_discs.common.toml.title": "Amireal Metal Cover Music disks Configs",
-  "geas_metal_discs.configuration.items": "Item List",
-  "geas_metal_discs.configuration.logDirtBlock": "Log Dirt Block",
-  "geas_metal_discs.configuration.magicNumberIntroduction": "Magic Number Text",
-  "geas_metal_discs.configuration.magicNumber": "Magic Number"
+"item.geas_metal_discs.creator_metal_disc": "Music disc",
+"item.geas_metal_discs.creator_metal_disc.desc":"Amireal - Creator (Metal Cover)"
 }

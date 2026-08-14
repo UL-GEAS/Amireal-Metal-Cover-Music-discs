@@ -1,0 +1,10 @@
+{
+  "creator_metal": {
+    "sounds": [
+      {
+        "name": "geas_metal_discs:creator_metal",
+        "stream": true
+      }
+    ]
+  }
+}
