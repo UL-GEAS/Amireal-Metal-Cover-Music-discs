@@ -11,11 +11,11 @@
   },
   "pattern": [
     "III",
-    "ICI",
+    "IDI",
     "III"
   ],
   "result": {
     "count": 1,
-    "id": "item.geas_metal_discs.creator_metal_disc"
+    "id": "geas_metal_discs:creator_metal_disc"
   }
 }

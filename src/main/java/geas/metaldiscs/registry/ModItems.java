@@ -1,17 +1,15 @@
-package geas.metaldisks.registry;
+package geas.metaldiscs.registry;
 
-import geas.metaldisks.GeasMetalDIsks;
+import geas.metaldiscs.GeasMetalDiscs;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
 
 import java.util.function.Supplier;
 
 public class ModItems {
-    public static final DeferredRegister.Items  ITEMS =
-            DeferredRegister.createItems(GeasMetalDIsks.MOD_ID);
-
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(GeasMetalDiscs.MOD_ID);
 
     public static final Supplier<Item> CREATOR_METAL_DISC = ITEMS.register("creator_metal_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.CREATOR_METAL_KEY).stacksTo(1)));
-
 }

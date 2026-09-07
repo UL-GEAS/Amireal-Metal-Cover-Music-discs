@@ -1,6 +1,7 @@
-package geas.metaldisks;
+package geas.metaldiscs;
 
-import geas.metaldisks.registry.ModItems;
+import geas.metaldiscs.registry.ModItems;
+import geas.metaldiscs.registry.ModSounds;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -17,19 +18,18 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 
-@Mod(GeasMetalDIsks.MOD_ID)
-public class GeasMetalDIsks {
+@Mod(GeasMetalDiscs.MOD_ID)
+public class GeasMetalDiscs {
     public static final String MOD_ID = "geas_metal_discs";
     public static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MOD_ID);
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MOD_ID);
 
 
-    public GeasMetalDIsks(IEventBus modEventBus, ModContainer modContainer) {
+    public GeasMetalDiscs(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
-        BLOCKS.register(modEventBus);
-        ITEMS.register(modEventBus);
+        ModItems.ITEMS.register(modEventBus);
+        ModSounds.SOUND_EVENTS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
@@ -41,7 +41,7 @@ public class GeasMetalDIsks {
 
     }
 
-    // Add the example block item to the building blocks tab
+
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.CREATOR_METAL_DISC.get());

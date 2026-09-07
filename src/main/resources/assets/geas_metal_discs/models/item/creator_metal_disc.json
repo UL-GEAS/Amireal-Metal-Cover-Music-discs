@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "geas_metal_discs:item/creator_metal_disc"
+  }
+}
